@@ -23,6 +23,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -38,6 +43,22 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    //RecycleView - Компонент для работы со списками
+    implementation 'androidx.recyclerview:recyclerview:1.3.0'
+
+    //Picasso - Удобная загрузка изображений по ссылке из интернета
+    implementation 'com.squareup.picasso:picasso:2.8'
+
+    //Retrofit - Работа с сетью
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation "com.squareup.retrofit2:retrofit-mock:2.9.0"
+    implementation "com.squareup.retrofit2:converter-gson:2.9.0"
+
+    //Coroutines - Асинхронное программирование
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.6.4"
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
