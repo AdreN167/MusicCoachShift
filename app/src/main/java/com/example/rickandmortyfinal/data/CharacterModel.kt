@@ -1,6 +1,7 @@
 package com.example.rickandmortyfinal.data
 
-import com.example.rickandmortyfinal.domain.entity.NameAndURLObject
+import com.example.rickandmortyfinal.domain.entity.Location
+import com.google.gson.annotations.SerializedName
 
 data class CharacterModel(
     val id: Int,
@@ -9,10 +10,14 @@ data class CharacterModel(
     val species: String?,
     val type: String?,
     val gender: String?,
-    val origin: NameAndURLObject?,
-    val location: NameAndURLObject?,
     val image: String?,
     val episode: List<String>?,
     val url: String?,
-    val created: String?
+    val created: String?,
+
+    @SerializedName("origin")
+    val originLocation: Location?,
+
+    @SerializedName("location")
+    val currentLocation: Location?
 )

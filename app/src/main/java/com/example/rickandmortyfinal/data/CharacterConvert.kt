@@ -13,12 +13,7 @@ class CharacterConvert {
                 species = species,
                 type = type,
                 gender = gender,
-                origin = origin,
-                location = location,
-                image = image,
-                episode = episode,
-                url = url,
-                created = created
+                image = image
             )
         }
 }
