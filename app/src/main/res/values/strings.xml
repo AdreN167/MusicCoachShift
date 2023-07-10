@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RickAndMortyFinal</string>
+    <string name="error">Произошла ошибка</string>
+    <string name="error_try_again">Повторить</string>
+    <string name="characters">Персонажи</string>
+    <string name="character_id">Id</string>
+    <string name="character_name">Имя персонажа</string>
+    <string name="character_status">Статус</string>
+    <string name="character_species">Вид</string>
+    <string name="character_gender">Пол</string>
+    <string name="character_create_data">Создан</string>
+</resources>
