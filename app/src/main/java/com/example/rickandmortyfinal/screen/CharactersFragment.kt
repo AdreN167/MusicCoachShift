@@ -11,7 +11,6 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import com.example.rickandmortyfinal.databinding.FragmentCharactersBinding
 import com.example.rickandmortyfinal.domain.entity.Character
-import com.example.rickandmortyfinal.domain.usecase.GetAllCharactersUseCase
 import com.example.rickandmortyfinal.domain.usecase.GetAllFromPageUseCase
 import com.example.rickandmortyfinal.mainActivity
 import com.example.rickandmortyfinal.presentation.CharactersState

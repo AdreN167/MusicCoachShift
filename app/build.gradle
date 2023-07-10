@@ -72,4 +72,5 @@ dependencies {
 
     //Picasso - Удобная загрузка изображений по ссылке из интернета
     implementation 'com.squareup.picasso:picasso:2.8'
+
 }
