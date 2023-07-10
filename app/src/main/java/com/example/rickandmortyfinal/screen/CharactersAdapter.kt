@@ -30,12 +30,16 @@ class CharactersAdapter(
 
     override fun getItemCount(): Int =
         characters.size
+
+
+
 }
 
 class CharactersViewHolder(
     private val binding: CharactersItemBinding
 ) : RecyclerView.ViewHolder(binding.root) {
 
+    // метод для "отрисовки" элементов в списке
     fun bind(character: Character, characterClickListener: (Character) -> Unit) {
         with(binding) {
             Picasso.get().load(character.image).into(imageCharacterView)
